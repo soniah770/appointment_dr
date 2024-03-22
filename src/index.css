@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.not--member {
+  position: absolute;
+  right: 2%;
+  top: 3%;
+}
+.not--member button {
+  background: gainsboro;
+  padding: 6px 20px;
+}
+.not--member button:hover{
+  box-shadow: none;
+}
+.not--member button:focus{
+  box-shadow: none;
+}
+.signin--section {
+  display: flex;
+}
+.section--img {
+  width: 50%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+.section--img .back--btn {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: #333;
+}
+.section--img .svg--signin--1 {
+  align-self: center;
+  height: 450px;
+  width: 400px;
+}
+.section--img .svg--signin--2 {
+  align-self: center;
+  height: 450px;
+  width: 400px;
+}
+.section--login {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.section--login p{
+  margin: 0%;
+  text-align: center;
+}
+.section--login p b{
+  color: #333;
+}
+
+@media only screen and (max-width: 990px) {
+  .section--img {
+    display: none;
+  }
+  .section--login {
+    width: 100%;
+  }
+  .login_card div{
+    width: 80%;
+  }
+  .signup--row{
+    display: flex;
+    flex-direction: column!important;
+    width: 100%;
+    align-items: center;
+    gap: 1em!important;
+  };
+  .account{
+    margin-top: 50px!important;
+  };
+}
+
+.login_card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.login_card input {
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: whitesmoke;
+  color: #383838;
+}
+.login_card .col-8{
+  position: relative;
+}
+.login_card label {
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  margin: 0%;
+}
+.password{
+  position: relative;
+}
+.eye--password{
+  position: absolute;
+  right: 15px;
+  top: 45%;
+  cursor: pointer;
+  font-size: 20px;
+}
+.login_card label .forgot {
+  position: absolute;
+  right: 0.5%;
+  text-decoration: none;
+}
+.login_card input:focus {
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 2.5px solid #00bfa6;
+}
+.signin--btn {
+  background-color: #00bfa6;
+  border-radius: 8px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.signin--btn button {
+  color: white;
+  padding: 10px 0px;
+  box-shadow: none;
+}
+.signin--btn button:hover {
+  color: white;
+}
+.signin--btn button:focus{
+  box-shadow: none;
+}
+.signup--row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #00bfa6;
+  width: 50%;
+  gap: 0em;
+}
+
+
+.arrow--right{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  z-index: 1;
+}
+.arrow--right:hover{
+  color: #00bfa6;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .landing--page .first--section{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .first--section div h2{
+    margin-top: 20%!important;
+    font-size: 2.5em!important;
+  }
+  .first--section div{
+    text-align: center!important;
+    justify-content: center;
+  } 
+  .first--section div .tags{  
+    width: 100%!important;
+    justify-content: center!important;
+  }
+  .doctor--image img{
+    display: none;
+  }
+} 
+.landing--page .first--section{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 5% 8%;
+  flex-direction: row;
+} 
+.first--section div{
+  width: 100%;
+}
+.first--section div h2{
+  font-weight: bolder;
+  font-size: 3em;
+  margin: 20px 0px;
+  color: rgb(53, 53, 53);
+  letter-spacing: 0.5px;
+  word-spacing: 5px;
+}
+.first--section .text--qoute{
+  color: rgb(48, 204, 152);
+  display: flex;
+  margin: 15px 0px;
+}
+.first--section .text--qoute p{
+  width: 80%;
+}
+.first--section div .tags{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+.tags h3{
+  font-size: 14px!important;
+}
+.tags .icon{
+  color: #07ccb2;
+}
+.first--section .btns{
+  margin: 10px 0px;
+}
+.first--section div .btn--1{
+  margin: 20px 0px;
+  background: #00bfa6;
+  font-size: 1em;
+  color: #fff;
+  padding: 6px 15px;
+  border: 2px solid #00bfa6!important;
+  transition: 0.3s all ease-in-out;
+}
+.first--section div .btn--2{
+  margin: 20px 0px;
+  border: 2px solid #00bfa6!important;
+  font-size: 1em;
+  padding: 6px 15px;
+  transition: 0.3s all ease-in-out;
+}
+.first--section div .btn--1:hover{
+  transform: translateY(-4px);
+  color: white;
+}
+.first--section div .btn--2:hover{
+  color: white;
+  background: #00bfa6;
+  transform: translateY(-4px);
+}
+.first--section .doctor--image{
+  display: flex;
+  justify-content: center;
+}
+.doctor--image img{
+  width: 120%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+  .second--section .card{
+      width: 40%!important;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .second--section .card{
+      width: 90%!important;
+  }
+}
+.second--section{
+  text-align: center;
+  padding: 40px;
+  margin-top: -40px;
+}
+.second--section h3{
+  padding: 30px 0px;
+  font-size: 2em;
+}
+.second--section main{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 40px 0px;
+  flex-wrap: wrap;
+}
+.second--section .card{
+  width: 20%;
+  border-radius: 8px;
+  padding: 20px;
+  align-items: center;
+  border: none;
+}
+.card img{
+  width: 60px;
+  height: 60px;
+}
+.card h5{
+  margin: 20px 0px;
+  color: #35e0ca;
+}
+.card .text{
+  font-size: small;
+}
+
+
+.error--lines{
+  display: flex!important;
+  justify-content: flex-start!important;
+  font-size: small;
+}
+
+
+
+.watch--in{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #ff416c;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    position: fixed;
+    bottom: 2%;
+    right: 1.4%;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    z-index: 2;
+}
+.watch--in svg{
+    font-size: 22px;
+    color: white;
+    font-weight: bolder!important;
+}
+.watch--in:hover{
+  width: 68px;
+  height: 68px;
+}

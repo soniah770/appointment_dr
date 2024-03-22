@@ -1,0 +1,582 @@
+.arrow--right{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+.arrow--right:hover{
+  color: #00bfa6;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .dashboard--card{
+    width: 45%!important;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .dashboard--container{
+    margin-top: 10%;
+  }
+  .dashboard--card{
+    width: 100%!important;
+  }
+  .dashboard--card .cards--info{
+    justify-content: center!important;
+  }
+}
+.back--icon{
+  font-size: 40px;
+  margin-top: -5px;
+  color: white;
+  background: #333;
+  border-radius: 50px;
+  padding: 5px;
+}
+.dashboard--container{
+  width: 85%;
+  margin-top: 50px;
+  margin-bottom: 10%;
+}
+.dashboard--main{
+  display: flex;
+  gap: 2em;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.dashboard--card{
+  width: 26%;
+  border-radius: 8px;
+  border: none;
+  padding: 0px 10px;
+}
+.dashboard--card h3{
+  padding: 20px;
+  font-size: 20px;
+  margin: 0%;
+}
+.dashboard--card .cards--info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.cards--info .cards--text{
+  font-size: 2em;
+  padding: 0px 20px;
+  margin: 0%;
+}
+.cards--info .cards--icon{
+  font-size: 2em;
+  padding: 0px 20px;
+  margin-top: -5px!important;
+  margin: 0%;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .table{
+    overflow-x: auto;
+    width: 1000px;
+  }
+}
+.doctors{
+  margin-top: 50px;
+}
+.doctors article{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.doctors .btn--add{
+  width: 100px;
+  color: white!important;
+  font-weight: bold;
+  background: #05b69e;
+}
+.doctors .table{
+  text-align: center;
+}
+.doctors .table--head{
+  background: #34c9b5;
+  color: white;
+  border: none!important;
+}
+.doctors .table--head th{
+  font-size: 18px;
+  padding: 25px;
+}
+.doctors .table--head th:first-child{
+  border-top-left-radius: 10px;
+}
+.doctors .table--head th:last-child{
+  border-top-right-radius: 10px;
+}
+.doctors .table--body tr:hover{
+  background: rgb(230, 227, 227);
+}
+.doctors .table--body td{
+  padding: 25px 0px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.doctors .table--body td button{
+  padding: 1px 0px;
+  margin-top: -3px;
+  width: 40px;
+}
+.doctors .table--body td button:focus{
+  box-shadow: none;
+}
+.doctors .table--body button .eye{
+  color: aliceblue;
+}
+.doctors .table--body .assign--doctor{
+  color: aliceblue;
+  background: rgb(29, 197, 141);
+}
+.doctors .table--body .user--role--icon{
+  font-size: 20px;
+  margin-top: -4px;
+}
+.doctors .table--body td .badge{
+  padding: 5px 15px;
+  margin: 0%;
+  font-size: small;
+}
+.doctors .table--body .bg-success{
+  background-color: #00bfa6!important;
+}
+.doctors .table--body .btn_approve{
+  background: #3cb371;
+  color: aliceblue;
+  font-size: small;
+  padding: 5px 0px;
+}
+.doctors .table--body .btn_disapprove{
+  background: #e05656;
+  color: aliceblue;
+  font-size: small;
+  padding: 5px 0px;
+}
+.doctors .table--body .check--doctors{
+  color: #2477b3;
+  font-weight: bold;
+  cursor: pointer;
+}
+.doctors .table--body .check--appointId{
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+.doctors .table--body .check--appointId:hover{
+  text-decoration: underline;
+  letter-spacing: 1.2px;
+}
+.doctors .table--body .approve--appoint{
+  font-size: 12px;
+  border: 1.8px solid #00bfa6;
+  width: fit-content;
+  padding: 0px 8px;
+}
+.doctors .table--body .approve--appoint:hover{
+  background-color: #00bfa6;
+  color: #fff;
+}
+.doctors .table--body .reject--appoint{
+  font-size: 12px;
+  border: 1.8px solid #e05656;
+  width: fit-content;
+  padding: 0px 10px;
+}
+.doctors .table--body .reject--appoint:hover{
+  background-color: #e05656;
+  color: #fff;
+}
+.doctor--patient{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 0%;
+}
+.doctor--patient b{
+  font-size: large;
+}
+.doctors .no--data{
+  display: flex;
+  margin-top: 5%;
+  align-content: center;
+  flex-direction: column;
+  font-size: large;
+}
+.doctors .no--data img{
+  width: 400px;
+}
+
+@media only screen and (max-width: 990px) {
+  .doctors--add--form{
+    width: 100%!important;
+  }
+  .doctors .no--data img{
+    margin-top: 15%;
+    width: 300px;
+  }
+}
+.add--doctor--section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.doctors--add--form {
+  margin-top: 5%;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.doctors--add--form .form-label{
+  color: #745d5d;
+}
+.doctors--add--form input{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.doctors--add--form input:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+.doctors--add--form textarea{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.doctors--add--form textarea:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+.doctors--add--form select{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.doctors--add--form select:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+.doctors--add--form .appoint--edit--details{
+  font-size: large;
+}
+.appoint--edit--details .badge{
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.btns--operate{
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+  margin-top: 20px;
+}
+.btns--operate .btn--add{
+  background-color: #00bfa6;
+  color: white;
+  padding: 0px 30px;
+}
+.btns--operate .btn--cancel{
+  background-color: #333;
+  color: aliceblue;
+}
+
+
+.profile--section article{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.profile--section article h4{
+  font-size: 1.8em;
+  align-self: flex-start;
+}
+.profile--section article .btn--edit{
+  padding: 0px 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.profile--section .profile{
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  border-radius: 10px;
+  width: 100%;
+}
+.profile--section .profile p{
+  text-transform: capitalize;
+  width: 350px;
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: black;
+  letter-spacing: 1px;
+}
+ .email{
+  text-transform: none!important;
+}
+.profile--section .profile .role span{
+    background: #60aeee;
+    padding: 2px 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 0.9em;
+}
+.profile--section .profile p span{
+  font-weight: normal;
+  color: #333;
+  font-size: 1em;
+  letter-spacing: normal;
+}
+.profile--section h3{
+  font-size: 1.8em;
+  align-self: flex-start;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.profile h4{
+  width: 100%;
+  text-align: left;
+  font-size: 22px!important;
+}
+.profile .profile_hospital_assign{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1em; */
+}
+.profile_hospital_assign p{
+  width: 350px!important;
+  background: lightblue;
+}
+
+.update--password{
+  display: flex;
+  border-radius: 10px;
+}
+.update--password .password--form{
+  padding: 30px;
+  border-radius: 10px;
+}
+.update--password .password--form section div{
+  margin-bottom: 10px!important;
+}
+.update--password .password--form input{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.update--password .password--form input:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+.update--password .update--btn{
+  background: #00bfa6;
+  color: aliceblue;
+  padding: 5px 30px;
+  margin: 10px 0px;
+}
+.update--password .update--btn:focus{
+  box-shadow: none;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .view--modal article p{
+    width: 100%!important;
+  }
+  .view--modal article{
+    flex-direction: column;
+  }
+}
+
+.delete--setting{
+  margin-top: 8%;
+}
+.delete--setting .card{
+  border: none;
+}
+.delete--setting .text--top{
+  font-size: 2em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #333;
+}
+.delete--setting .text h4{
+  color: #e05656;
+  font-weight: bolder;
+}
+.delete--setting .text h6{
+  font-size: 15px;
+}
+.delete--setting .before--you--go{
+  margin-bottom: 20px;
+}
+.delete--setting .before--you--go h5{
+  color: #333!important;
+}
+.delete--setting select{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.delete--setting select:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+.delete--setting .user--delete--section{
+    border-radius: 10px;
+    padding: 20px;
+}
+.user--delete--section .btns--operate{
+  display: flex;
+  margin: 0%;
+  gap: 0.5em;
+  justify-content: flex-start;
+}
+.btns--operate .btn--keep{
+  background-color: #00bfa6;
+  color: #fff;
+  padding: 8px 20px;
+}
+.btns--operate .btn--delete{
+  color: #333;
+  padding: 8px 20px;
+  border: 2px solid #e05656;
+}
+.btns--operate .btn--delete:hover{
+  background-color: #e05656;
+  color: #fff;
+}
+.btns--operate button:focus{
+  box-shadow: none;
+}
+
+
+
+.modal-content{
+  border-radius: 10px;
+  padding: 10px;
+}
+.modal-title{
+  text-transform: capitalize;
+}
+.modal-title p{
+  font-size: 15px;
+  margin: 0%;
+  padding: 0%;
+  font-weight: bolder;
+}
+.modal-title p span{
+  font-weight: normal!important;
+  background: #51aae9;
+  padding: 0px 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  border-radius: 5px;
+}
+.view--modal article{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap!important;
+}
+.view--modal article p{
+  width: 50%;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+.view--modal article p span{
+  font-weight: normal;
+  color: #333;
+  text-transform: capitalize;
+}
+.view--modal article p .bg-info{
+  padding: 2px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+
+
+.edit--profile {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.edit--profile input{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.edit--profile input:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+.edit--profile select{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.edit--profile select:focus{
+  background-color: whitesmoke;
+  box-shadow: none;
+  border-bottom: 3px solid #348AC7;
+}
+
+
+.edit--profile .assign--hospital--loader{
+  position: absolute;
+  left: 10px;
+}
+.assign--btn{
+  padding: 3px 8px;
+  font-size: 15px;
+  margin-bottom: 0%;
+  background: #00bfa6!important;
+  border: none;
+}
+.assign--btn:focus{
+  box-shadow: none;
+}
+
+
+
+
+
+.emailid{
+  text-transform: lowercase!important;
+}
